@@ -298,3 +298,5 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 .side .mono{margin-bottom:12px}
 .side nav>a{padding:7px 12px}
 .side nav .sub{padding-top:5px;padding-bottom:5px}
+/* Más aire entre la barra del carrusel y los controles */
+.car .ctrl{margin-top:28px;gap:36px}
