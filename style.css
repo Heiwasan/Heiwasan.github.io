@@ -287,3 +287,8 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 
 .sidec{margin-top:auto;padding-top:24px}
 .side .mono{margin-bottom:20px}
+
+/* Foto del menú dentro del marco ornamental */
+.mono span{width:132px;height:auto;border:0;border-radius:0;overflow:visible;background:none!important;margin-bottom:10px;filter:drop-shadow(0 4px 6px rgba(16,17,17,.25))}
+.mono:hover span,.mono:focus-visible span{background:none;border:0}
+.mono span img{width:100%;height:auto;border-radius:0;object-fit:contain}
