@@ -221,3 +221,6 @@ footer .wrap{padding-top:0}
 .portrait img{height:auto;object-fit:contain;filter:drop-shadow(8px 12px 14px rgba(16,17,17,.35))}
 .cv-dl{margin-top:48px;padding-top:32px;border-top:1px solid var(--au);text-align:center}
 footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
+.sidec{margin-top:auto;padding-top:24px;display:flex;flex-direction:column;gap:6px}
+.sidec .mail{margin:0;padding:0}
+.tel{font-size:.8rem;color:var(--g);text-decoration:none}.tel:hover,.tel:focus-visible{color:var(--b);text-decoration:underline}
