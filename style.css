@@ -220,3 +220,4 @@ footer .wrap{padding-top:0}
 .portrait{border:0;box-shadow:none;background:none;aspect-ratio:auto;overflow:visible}
 .portrait img{height:auto;object-fit:contain;filter:drop-shadow(8px 12px 14px rgba(16,17,17,.35))}
 .cv-dl{margin-top:48px;padding-top:32px;border-top:1px solid var(--au);text-align:center}
+footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
