@@ -231,3 +231,5 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 .mobile .scr img{display:block;height:100%;width:auto;max-width:none}
 .mobile figcaption{width:0;min-width:100%;flex-wrap:wrap}
 .mobile figcaption{flex-direction:column;gap:2px}
+
+.mk{margin:0 0 40px;text-align:center}.mk img{width:100%;max-width:920px;height:auto;display:inline-block}
