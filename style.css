@@ -292,3 +292,9 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 .mono span{width:132px;height:auto;border:0;border-radius:0;overflow:visible;background:none!important;margin-bottom:10px;filter:drop-shadow(0 4px 6px rgba(16,17,17,.25))}
 .mono:hover span,.mono:focus-visible span{background:none;border:0}
 .mono span img{width:100%;height:auto;border-radius:0;object-fit:contain}
+/* Menú compacto: sin scroll en pantallas de ~700px de alto */
+.side{padding-top:20px;padding-bottom:14px}
+.mono span{width:112px;margin-bottom:6px}
+.side .mono{margin-bottom:12px}
+.side nav>a{padding:7px 12px}
+.side nav .sub{padding-top:5px;padding-bottom:5px}
