@@ -31,3 +31,8 @@ figcaption{font-size:.9rem;margin-top:8px;display:flex;justify-content:space-bet
 #lbx{position:absolute;top:12px;right:20px;background:none;border:0;color:var(--c);font-size:2.4rem;cursor:pointer}
 a:focus-visible,button:focus-visible{outline:3px solid var(--b);outline-offset:2px}
 @media(max-width:800px){.hero-g,.cols,.index{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.nav nav a{margin-left:14px}.logo{font-size:1.2rem}section{padding:56px 0}}
+.role{font-family:Almendra,Georgia,serif;font-size:1.6rem;color:var(--b);margin:12px 0 0}
+.tags{list-style:none;padding:0;margin:0 0 32px;display:flex;gap:10px;flex-wrap:wrap}.tags li{border:1px solid var(--au);padding:4px 14px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin:0}
+.plain{list-style:none;padding:0}.plain h3{font-size:1.25rem;margin-bottom:2px}
+.steps{grid-template-columns:repeat(5,1fr)}.lead{max-width:36ch}
+@media(max-width:800px){.steps{grid-template-columns:1fr}}
