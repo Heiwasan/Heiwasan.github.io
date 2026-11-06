@@ -241,3 +241,8 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 
 .abt{text-align:right}.abt h2{font-family:'Almendra',serif;font-size:2rem;color:var(--b);margin:0 0 6px}.abt h3{margin-top:0}
 @media(max-width:800px){.abt{text-align:left}}
+
+.det-top{padding:56px 0 8px}.det-top .cols{margin-bottom:24px}
+.det-car{margin-top:0;border-top:0;padding:28px 0 36px}.det-car+.det-car{border-top:1px solid var(--au)}
+.dvh{font-family:'Almendra',serif;color:var(--b);font-size:1.4rem;margin:0 0 8px;padding-left:6px}
+.det-bot{padding:48px 0 72px}.det-bot .colab{margin-bottom:40px}

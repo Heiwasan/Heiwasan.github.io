@@ -7,13 +7,12 @@ document.getElementById('lbx').onclick=close_;document.getElementById('lbp').onc
 lb.addEventListener('click',e=>{if(e.target===lb)close_()});
 document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close_();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
 let x0=null;lb.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>60)show(cur+(d<0?1:-1));x0=null})}
-const car=document.querySelector('.car');
-if(car){const tr=car.querySelector('.track'),sl=[...tr.querySelectorAll('.slide')],cnt=car.querySelector('.cnt'),pb=car.querySelector('.cp'),nb=car.querySelector('.cn');
+document.querySelectorAll('.car').forEach(car=>{const tr=car.querySelector('.track'),sl=[...tr.querySelectorAll('.slide')],cnt=car.querySelector('.cnt'),pb=car.querySelector('.cp'),nb=car.querySelector('.cn');
 const idx=()=>{const c=tr.scrollLeft+tr.clientWidth/2;let b=0,bd=1e9;sl.forEach((s,i)=>{const d=Math.abs(s.offsetLeft+s.offsetWidth/2-c);if(d<bd){bd=d;b=i}});return b};
 const go=i=>{i=Math.max(0,Math.min(sl.length-1,i));const s=sl[i];tr.scrollTo({left:s.offsetLeft-(tr.clientWidth-s.offsetWidth)/2,behavior:'smooth'})};
 const upd=()=>{const i=idx();cnt.textContent=(i+1)+' / '+sl.length;pb.disabled=i===0;nb.disabled=i===sl.length-1};
 pb.onclick=()=>go(idx()-1);nb.onclick=()=>go(idx()+1);tr.addEventListener('scroll',()=>requestAnimationFrame(upd));
-tr.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(idx()+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(idx()-1)}});upd()}
+tr.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(idx()+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(idx()-1)}});upd()});
 const bg=document.querySelector('.burger'),sd=document.getElementById('side');
 if(bg&&sd){bg.onclick=()=>{const o=sd.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.textContent=o?'×':'☰'};sd.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{sd.classList.remove('open');bg.textContent='☰'}))}
 
