@@ -224,11 +224,12 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 .sidec{margin-top:auto;padding-top:24px;display:flex;flex-direction:column;gap:6px}
 .sidec .mail{margin:0;padding:0}
 .tel{font-size:.8rem;color:var(--g);text-decoration:none}.tel:hover,.tel:focus-visible{color:var(--b);text-decoration:underline}
-/* Teléfonos: el marco se ajusta al 100% de la captura, sin scroll */
+/* Teléfonos: marco fijo con la proporción 390:844; si la captura es más larga, se desplaza sin mostrar barra */
 .slide.mobile{width:fit-content}
 .mobile .fr{display:block;width:fit-content}
-.mobile .scr{overflow:hidden;max-height:none;height:min(66vh,620px)}
-.mobile .scr img{display:block;height:100%;width:auto;max-width:none}
+.mobile .scr{display:block;overflow-y:auto;overflow-x:hidden;max-height:none;height:auto;width:250px;aspect-ratio:390/844;scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior:contain}
+.mobile .scr::-webkit-scrollbar{display:none}
+.mobile .scr img{display:block;width:100%;height:auto;max-width:none}
 .mobile figcaption{width:0;min-width:100%;flex-wrap:wrap}
 .mobile figcaption{flex-direction:column;gap:2px}
 
