@@ -172,3 +172,13 @@ footer .wrap{padding-top:0}
  .banner{padding:72px 0 56px}
 }
 @media(max-width:900px){.side{padding-top:72px}}
+
+/* Esquinas ornamentales del banner (dorado). El SVG original es la esquina superior derecha; el resto se obtiene rotando. */
+.banner{position:relative;overflow:hidden}
+.banner .wrap{position:relative;z-index:1}
+.co{position:absolute;display:block;width:clamp(96px,13vw,190px);aspect-ratio:1/1;background:url(img/corner.svg) right center/contain no-repeat;pointer-events:none}
+.co.c-tr{top:0;right:0}
+.co.c-br{bottom:0;right:0;transform:rotate(90deg)}
+.co.c-bl{bottom:0;left:0;transform:rotate(180deg)}
+.co.c-tl{top:0;left:0;transform:rotate(270deg)}
+.banner.small .co{width:clamp(64px,8vw,120px)}
