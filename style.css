@@ -255,3 +255,23 @@ h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}
 .banner.small h1{font-size:clamp(1.9rem,3.8vw,3rem)}
 .abt h2{font-size:1.7rem}.abt h3,.det-txt h3,.dvh,.cv h3,.contact h3{font-size:1.1rem;letter-spacing:.1em}
 .cv h3{font-size:1rem}
+
+/* Contacto */
+.contact{padding:64px 0 80px}.ct-g{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.ct-cards{display:grid;gap:14px}
+.ct-card{display:flex;align-items:center;gap:16px;padding:18px 20px;background:var(--c2);border:1px solid var(--au);border-radius:4px;color:var(--k);text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b);color:var(--c)}
+.ct-card small{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--au)}.ct-card b{font-weight:600;font-size:1.05rem;overflow-wrap:anywhere}
+.ct-ic{flex:none;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--au);display:grid;place-items:center}
+.ct-ic svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ct-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.btn.ghost{background:transparent;color:var(--g);border:1.5px solid var(--g)}.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--b);border-color:var(--b);color:var(--c)}
+.ct-form{background:var(--c2);border:1px solid var(--au);border-radius:4px;padding:28px 28px 24px;display:grid;gap:16px}
+.ct-form h3{margin:0 0 4px}
+.ct-form label{display:grid;gap:6px;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--g)}
+.ct-form input,.ct-form textarea{font:inherit;font-size:1rem;letter-spacing:0;text-transform:none;color:var(--k);background:var(--c);border:1px solid #b9b2a3;border-radius:3px;padding:11px 12px;width:100%}
+.ct-form input:focus,.ct-form textarea:focus{outline:2px solid var(--g);outline-offset:1px;border-color:var(--g)}
+.ct-form textarea{resize:vertical;min-height:140px}.ct-form .btn{justify-self:start;cursor:pointer;border:0}
+.ct-note{margin:0;font-size:.85rem;font-style:italic;color:#5b5b55}.ct-note.err{color:var(--b);font-style:normal;font-weight:600}
+@media(max-width:900px){.ct-g{grid-template-columns:1fr;gap:32px}}
+.ct-form .btn{font:inherit;font-size:1rem;padding:14px 28px}

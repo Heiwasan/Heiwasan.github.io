@@ -17,3 +17,9 @@ const bg=document.querySelector('.burger'),sd=document.getElementById('side');
 if(bg&&sd){bg.onclick=()=>{const o=sd.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.textContent=o?'×':'☰'};sd.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{sd.classList.remove('open');bg.textContent='☰'}))}
 
 document.querySelectorAll('.tog button').forEach(b=>b.onclick=()=>document.querySelectorAll('.job').forEach(d=>d.open=b.dataset.t==='open'));
+
+const ctf=document.getElementById('ctf');
+if(ctf){ctf.addEventListener('submit',ev=>{ev.preventDefault();const n=ctf.n.value.trim(),e=ctf.e.value.trim(),m=ctf.m.value.trim(),note=document.getElementById('ctn');
+if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){note.textContent='Completa tu nombre, un correo válido y el mensaje.';note.classList.add('err');return}
+note.classList.remove('err');note.textContent='Abriendo tu aplicación de correo…';
+location.href='mailto:mpfretes@gmail.com?subject='+encodeURIComponent('Contacto desde el portafolio · '+n)+'&body='+encodeURIComponent(m+'\n\n— '+n+' ('+e+')')})}
