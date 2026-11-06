@@ -36,3 +36,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--b);outline-offset:2
 .plain{list-style:none;padding:0}.plain h3{font-size:1.25rem;margin-bottom:2px}
 .steps{grid-template-columns:repeat(5,1fr)}.lead{max-width:36ch}
 @media(max-width:800px){.steps{grid-template-columns:1fr}}
+.btn{transition:background .2s,border-color .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--b);border-color:var(--b);color:var(--c)}
+.index a{transition:background .2s,border-color .2s,color .2s}
+.index a:hover,.index a:focus-visible{background:var(--b);border-color:var(--b);color:var(--c)}
+.index a:hover span,.index a:hover em,.index a:focus-visible span,.index a:focus-visible em{color:var(--c)}
+figure button{transition:border-color .2s,box-shadow .2s}
+figure button:hover,figure button:focus-visible{border-color:var(--b);box-shadow:0 0 0 3px var(--b)}
+.nav nav a:hover,.nav nav a:focus-visible,.logo:hover{color:var(--b)}
+#lbx{transition:color .2s}#lbx:hover,#lbx:focus-visible{color:#fff;background:var(--b);border-radius:50%;width:48px;height:48px;line-height:1;padding:0}
