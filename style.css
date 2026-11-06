@@ -276,5 +276,3 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 @media(max-width:900px){.ct-g{grid-template-columns:1fr;gap:32px}}
 .ct-form .btn{font:inherit;font-size:1rem;padding:14px 28px}
 
-/* Fondo decorativo: ornamento en mosaico, apenas más oscuro que el crema */
-.main{background-color:var(--c);background-image:url(img/linea.svg);background-repeat:repeat;background-size:351px 36px}
