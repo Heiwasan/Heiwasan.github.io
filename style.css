@@ -224,3 +224,10 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 .sidec{margin-top:auto;padding-top:24px;display:flex;flex-direction:column;gap:6px}
 .sidec .mail{margin:0;padding:0}
 .tel{font-size:.8rem;color:var(--g);text-decoration:none}.tel:hover,.tel:focus-visible{color:var(--b);text-decoration:underline}
+/* Teléfonos: el marco se ajusta al 100% de la captura, sin scroll */
+.slide.mobile{width:fit-content}
+.mobile .fr{display:block;width:fit-content}
+.mobile .scr{overflow:hidden;max-height:none;height:min(66vh,620px)}
+.mobile .scr img{display:block;height:100%;width:auto;max-width:none}
+.mobile figcaption{width:0;min-width:100%;flex-wrap:wrap}
+.mobile figcaption{flex-direction:column;gap:2px}
