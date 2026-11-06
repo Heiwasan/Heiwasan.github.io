@@ -237,3 +237,6 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 .mk-row{align-items:center;margin-bottom:40px}.mk-row .mk{margin:0}.mk img{max-width:100%}
 .colab{margin-bottom:56px}.colab ul{max-width:none}
 @media(max-width:800px){.mk-row{gap:24px}}
+
+.abt{text-align:right}.abt h2{font-family:'Almendra',serif;font-size:2rem;color:var(--b);margin:0 0 6px}.abt h3{margin-top:0}
+@media(max-width:800px){.abt{text-align:left}}
