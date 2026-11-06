@@ -123,3 +123,11 @@ figcaption{display:flex;justify-content:space-between;gap:8px;font-size:.92rem;m
 .pn a:last-child{text-align:right}.pn small{display:block;font-family:Lora,serif;font-size:.85rem;opacity:.8}
 .pn a:hover,.pn a:focus-visible{background:var(--b);border-color:var(--b);color:var(--c)}
 @media(max-width:800px){.track{padding:20px 6vw 28px;gap:22px}.pn{grid-template-columns:1fr}.mobile{width:240px}}
+
+/* Miniaturas a todo el marco */
+.card .full{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .6s}
+.card.k-web .full{object-position:left top}
+.card:hover .full,.card:focus-visible .full{transform:scale(1.06)}
+.card .cap{background:linear-gradient(transparent,rgba(16,17,17,.88) 70%)}
+.card .cap{padding-top:140px;background:linear-gradient(rgba(16,17,17,0),rgba(16,17,17,.82) 38%,rgba(16,17,17,.96) 72%)}
+.card:hover .cap,.card:focus-visible .cap{background:linear-gradient(rgba(93,30,33,0),rgba(93,30,33,.85) 38%,rgba(93,30,33,.97) 72%)}
