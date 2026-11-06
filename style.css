@@ -283,7 +283,7 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 .sidec{margin-top:0;padding-top:16px}
 /* Separador vertical ornamental en el borde del menú lateral */
 .side{border-right:0}
-.side::after{content:'';position:absolute;top:0;bottom:0;right:0;width:14px;background:url(img/linea-v.svg) center top/14px auto repeat-y;border-left:1px solid var(--au);pointer-events:none}
+.side::after{content:'';position:absolute;top:0;bottom:0;right:0;width:14px;background:url(img/linea-v.svg) center top/14px auto repeat-y;pointer-events:none}
 
 .sidec{margin-top:auto;padding-top:24px}
 .side .mono{margin-bottom:20px}
