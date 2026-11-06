@@ -233,3 +233,7 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 .mobile figcaption{flex-direction:column;gap:2px}
 
 .mk{margin:0 0 40px;text-align:center}.mk img{width:100%;max-width:920px;height:auto;display:inline-block}
+
+.mk-row{align-items:center;margin-bottom:40px}.mk-row .mk{margin:0}.mk img{max-width:100%}
+.colab{margin-bottom:56px}.colab ul{max-width:none}
+@media(max-width:800px){.mk-row{gap:24px}}
