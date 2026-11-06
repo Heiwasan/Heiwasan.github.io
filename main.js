@@ -14,3 +14,5 @@ const go=i=>{i=Math.max(0,Math.min(sl.length-1,i));const s=sl[i];tr.scrollTo({le
 const upd=()=>{const i=idx();cnt.textContent=(i+1)+' / '+sl.length;pb.disabled=i===0;nb.disabled=i===sl.length-1};
 pb.onclick=()=>go(idx()-1);nb.onclick=()=>go(idx()+1);tr.addEventListener('scroll',()=>requestAnimationFrame(upd));
 tr.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(idx()+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(idx()-1)}});upd()}
+const bg=document.querySelector('.burger'),sd=document.getElementById('side');
+if(bg&&sd){bg.onclick=()=>{const o=sd.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.textContent=o?'×':'☰'};sd.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{sd.classList.remove('open');bg.textContent='☰'}))}
