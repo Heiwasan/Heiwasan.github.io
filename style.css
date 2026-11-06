@@ -246,3 +246,12 @@ footer{padding:14px 0}footer p{margin:0;font-size:.85rem}
 .det-car{margin-top:0;border-top:0;padding:28px 0 36px}.det-car+.det-car{border-top:1px solid var(--au)}
 .dvh{font-family:'Almendra',serif;color:var(--b);font-size:1.4rem;margin:0 0 8px;padding-left:6px}
 .det-bot{padding:48px 0 72px}.det-bot .colab{margin-bottom:40px}
+
+/* Títulos en mayúscula (títulos cortos de sección; tarjetas, cargos y descripciones quedan en minúscula) */
+h1,h2,.abt h2,.dvh,.det-txt h3,.cv h3,.contact h3{text-transform:uppercase;letter-spacing:.06em}
+h1{font-size:clamp(2.2rem,5vw,3.9rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}
+.banner h1{font-size:clamp(2.3rem,5vw,4.2rem);letter-spacing:.1em}
+.banner.small h1{font-size:clamp(1.9rem,3.8vw,3rem)}
+.abt h2{font-size:1.7rem}.abt h3,.det-txt h3,.dvh,.cv h3,.contact h3{font-size:1.1rem;letter-spacing:.1em}
+.cv h3{font-size:1rem}
