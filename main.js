@@ -16,3 +16,5 @@ pb.onclick=()=>go(idx()-1);nb.onclick=()=>go(idx()+1);tr.addEventListener('scrol
 tr.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(idx()+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(idx()-1)}});upd()}
 const bg=document.querySelector('.burger'),sd=document.getElementById('side');
 if(bg&&sd){bg.onclick=()=>{const o=sd.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.textContent=o?'×':'☰'};sd.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{sd.classList.remove('open');bg.textContent='☰'}))}
+
+document.querySelectorAll('.tog button').forEach(b=>b.onclick=()=>document.querySelectorAll('.job').forEach(d=>d.open=b.dataset.t==='open'));
