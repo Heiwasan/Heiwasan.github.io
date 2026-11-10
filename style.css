@@ -351,3 +351,4 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 .slide.board{width:min(78vw,340px)}
 .board .scr{aspect-ratio:4/5;max-height:none;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff}
 .board .scr img{width:100%;height:100%;object-fit:contain;display:block}
+.board .scr img{object-fit:cover;object-position:center}.board .scr{background:none}
