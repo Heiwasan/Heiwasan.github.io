@@ -23,3 +23,5 @@ if(ctf){ctf.addEventListener('submit',ev=>{ev.preventDefault();const n=ctf.n.val
 if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){note.textContent='Completa tu nombre, un correo válido y el mensaje.';note.classList.add('err');return}
 note.classList.remove('err');note.textContent='Abriendo tu aplicación de correo…';
 location.href='mailto:mpfretes@gmail.com?subject='+encodeURIComponent('Contacto desde el portafolio · '+n)+'&body='+encodeURIComponent(m+'\n\n— '+n+' ('+e+')')})}
+
+document.querySelectorAll('.subh').forEach(function(b){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');b.parentNode.classList.toggle('open',!o);document.getElementById(b.getAttribute('aria-controls')).hidden=o;});});
