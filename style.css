@@ -343,3 +343,11 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 @media(max-width:700px){.shops{justify-content:flex-start}.shops-l{text-align:left}.shop-tab{width:96px}}
 .pipwrap .pipban{background-color:var(--shop)}
 .pipwrap .pipban .kicker{color:#fff;opacity:.85}
+
+/* Ta'anga: pantallas 9:16 */
+.mobile.r916 .scr{aspect-ratio:9/16;overflow:hidden}
+.mobile.r916 .scr img{width:100%;height:100%;object-fit:cover;display:block}
+/* Piezas que no son pantallas: marco 4:5, la imagen mantiene su proporción (zoom con "Ampliar") */
+.slide.board{width:min(78vw,340px)}
+.board .scr{aspect-ratio:4/5;max-height:none;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff}
+.board .scr img{width:100%;height:100%;object-fit:contain;display:block}
