@@ -300,3 +300,18 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 .side nav .sub{padding-top:5px;padding-bottom:5px}
 /* Más aire entre la barra del carrusel y los controles */
 .car .ctrl{margin-top:28px;gap:36px}
+
+/* ---- categorías y nuevos tipos de lámina ---- */
+.catblk{margin-bottom:56px}
+.cath{text-transform:uppercase;margin:0 0 4px}
+.catd{margin:0 0 22px;color:var(--b);font-style:italic}
+.subh{display:block;margin:10px 0 2px 12px;font-family:Almendra,serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--b)}
+.slide.board{width:min(78vw,640px)}
+.board .fr{background:#fff;border:1.5px solid var(--k);border-radius:8px;overflow:hidden;box-shadow:8px 8px 0 var(--au)}
+.board .scr{max-height:none;overflow:hidden}
+.slide.post{width:min(72vw,340px)}
+.post .fr{border:1.5px solid var(--k);border-radius:6px;overflow:hidden;box-shadow:8px 8px 0 var(--au);background:#fff}
+.post .scr{max-height:none;overflow:hidden}
+.plink{margin:18px 0 0}
+.card.k-mobile .full{object-position:top center}
+.card .full.fit{object-fit:contain;object-position:center 30%;background:#fff;padding:14px 14px 150px}
