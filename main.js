@@ -1,3 +1,4 @@
+const EN=document.documentElement.lang==='en';
 const lb=document.getElementById('lb');
 if(lb){const im=lb.querySelector('img'),cp=lb.querySelector('p'),box=lb.querySelector('.lbs');let list=[],cur=0,last=null;
 function show(i){cur=(i+list.length)%list.length;const b=list[cur];im.src=b.dataset.src;im.alt=b.dataset.cap;cp.textContent=b.dataset.cap+' · '+b.dataset.dev+'  ('+(cur+1)+'/'+list.length+')';box.scrollTop=0}
@@ -20,9 +21,9 @@ document.querySelectorAll('.tog button').forEach(b=>b.onclick=()=>document.query
 
 const ctf=document.getElementById('ctf');
 if(ctf){ctf.addEventListener('submit',ev=>{ev.preventDefault();const n=ctf.n.value.trim(),e=ctf.e.value.trim(),m=ctf.m.value.trim(),note=document.getElementById('ctn');
-if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){note.textContent='Completa tu nombre, un correo válido y el mensaje.';note.classList.add('err');return}
-note.classList.remove('err');note.textContent='Abriendo tu aplicación de correo…';
-location.href='mailto:mpfretes@gmail.com?subject='+encodeURIComponent('Contacto desde el portafolio · '+n)+'&body='+encodeURIComponent(m+'\n\n— '+n+' ('+e+')')})}
+if(!n||!/^\S+@\S+\.\S+$/.test(e)||!m){note.textContent=EN?'Please fill in your name, a valid email and your message.':'Completa tu nombre, un correo válido y el mensaje.';note.classList.add('err');return}
+note.classList.remove('err');note.textContent=EN?'Opening your email app…':'Abriendo tu aplicación de correo…';
+location.href='mailto:mpfretes@gmail.com?subject='+encodeURIComponent((EN?'Contact from the portfolio · ':'Contacto desde el portafolio · ')+n)+'&body='+encodeURIComponent(m+'\n\n— '+n+' ('+e+')')})}
 
 document.querySelectorAll('.subh').forEach(function(b){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');b.parentNode.classList.toggle('open',!o);document.getElementById(b.getAttribute('aria-controls')).hidden=o;});});
 document.querySelectorAll('.shop-tab').forEach(function(t){t.addEventListener('click',function(){var w=document.querySelector('.pipwrap');if(!w)return;w.setAttribute('data-shop',t.dataset.shop);document.querySelectorAll('.shop-tab').forEach(function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on?'true':'false');});var tr=w.querySelector('[data-s='+t.dataset.shop+'] .track');if(tr)tr.scrollLeft=0;});});
