@@ -349,3 +349,11 @@ a.ct-card:hover,a.ct-card:focus-visible{background:var(--b);border-color:var(--b
 .board .scr{aspect-ratio:4/5;max-height:none;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff}
 .board .scr img{width:100%;height:100%;object-fit:contain;display:block}
 .board .scr img{object-fit:cover;object-position:center}.board .scr{background:none}
+
+/* SAVIA: video bajo la capa negra del banner principal */
+.slide.web.long .scr{display:block;position:relative;aspect-ratio:16/10;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin}
+.slide.web.long .scr>img:first-child{display:block;width:100%;height:auto}
+.vh{position:absolute;left:0;top:0;width:100%;aspect-ratio:16/9;overflow:hidden;background:#000}
+.vh video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vh .vov{position:absolute;inset:0;background:rgba(0,0,0,.4)}
+.vh img{position:absolute;inset:0;width:100%;height:100%}
