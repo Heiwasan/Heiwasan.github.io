@@ -1,4 +1,4 @@
-:root{--g:#154230;--b:#5D1E21;--k:#101111;--au:#A6824A;--c:#E6E2DA;--c2:#DDD8CD}
+:root{--g:#154230;--b:#38040E;--k:#101111;--au:#A6824A;--c:#E6E2DA;--c2:#DDD8CD}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--c);color:var(--k);font:18px/1.65 Lora,Georgia,serif}
 h1,h2,h3,.logo{font-family:Almendra,Georgia,serif;font-weight:700;line-height:1.15;margin:0}
@@ -79,7 +79,7 @@ figcaption{display:flex;justify-content:space-between;gap:8px;font-size:.92rem;m
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .card{position:relative;display:block;aspect-ratio:4/5;background:var(--bg);overflow:hidden;text-decoration:none;color:var(--c);border:1.5px solid var(--k);border-radius:4px;box-shadow:6px 6px 0 var(--au);transition:transform .3s,box-shadow .3s}
 .card:hover,.card:focus-visible{transform:translateY(-6px);box-shadow:9px 9px 0 var(--b);outline:none}
-.card:hover .cap,.card:focus-visible .cap{background:linear-gradient(transparent,rgba(93,30,33,.97) 55%)}
+.card:hover .cap,.card:focus-visible .cap{background:linear-gradient(transparent,rgba(56,4,14,.97) 55%)}
 .art2{position:absolute;inset:0;display:block}
 .ph{position:absolute;left:50%;top:9%;width:46%;transform:translateX(-50%);background:var(--k);padding:6px;border-radius:22px;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .4s}
 .ph img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:16px}
@@ -130,7 +130,7 @@ figcaption{display:flex;justify-content:space-between;gap:8px;font-size:.92rem;m
 .card:hover .full,.card:focus-visible .full{transform:scale(1.06)}
 .card .cap{background:linear-gradient(transparent,rgba(16,17,17,.88) 70%)}
 .card .cap{padding-top:140px;background:linear-gradient(rgba(16,17,17,0),rgba(16,17,17,.82) 38%,rgba(16,17,17,.96) 72%)}
-.card:hover .cap,.card:focus-visible .cap{background:linear-gradient(rgba(93,30,33,0),rgba(93,30,33,.85) 38%,rgba(93,30,33,.97) 72%)}
+.card:hover .cap,.card:focus-visible .cap{background:linear-gradient(rgba(56,4,14,0),rgba(56,4,14,.85) 38%,rgba(56,4,14,.97) 72%)}
 /* ===== Layout con sidebar ===== */
 body.app{margin:0}
 .side{position:fixed;left:0;top:0;bottom:0;width:250px;background:var(--c2);border-right:1px solid var(--au);padding:32px 22px 24px;display:flex;flex-direction:column;overflow-y:auto;z-index:6;transition:transform .3s}
